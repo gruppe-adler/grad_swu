@@ -2,22 +2,22 @@
 private _bool = [(missionConfigFile >> "PermaDeath"), "usePermaDeath", 0] call BIS_fnc_returnConfigEntry;
 
 if (_bool == 1) then {
-	["ace_unconscious", {
-		params ["_unit", "_state"];
+    ["ace_unconscious", {
+        params ["_unit", "_state"];
 
-		// execute only when event is fired locally
-		if (player isEqualTo _unit) then {
-			[{
-				[FUNC(onPlayerUnconscious), _this] call CBA_fnc_execNextFrame;
-			},[_unit,_state], 1] call CBA_fnc_waitAndExecute;
-		};
-	}] call CBA_fnc_addEventHandler;
-
-	["CBA_loadingScreenDone", {
-        [{time > (_this + 3)},{
-        if (isNull (getAssignedCuratorLogic ace_player) && {isClass (configFile >> "CfgPatches" >> "achilles_modules_f_achilles")}) then {
-			call FUNC(addZeusLogic);
+        // execute only when event is fired locally
+        if (player isEqualTo _unit) then {
+            [{
+                [FUNC(onPlayerUnconscious), _this] call CBA_fnc_execNextFrame;
+            },[_unit,_state], 1] call CBA_fnc_waitAndExecute;
         };
-    },time] call CBA_fnc_waitUntilAndExecute;
-}] call CBA_fnc_addEventHandler;
+    }] call CBA_fnc_addEventHandler;
+
+    ["CBA_loadingScreenDone", {
+        [{time > (_this + 3)},{
+            if (isNull (getAssignedCuratorLogic ace_player) && {isClass (configFile >> "CfgPatches" >> "achilles_modules_f_achilles")}) then {
+                call FUNC(addZeusLogic);
+            };
+        },time] call CBA_fnc_waitUntilAndExecute;
+    }] call CBA_fnc_addEventHandler;
 };

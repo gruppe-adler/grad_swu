@@ -36,8 +36,8 @@ if _state then {
 
     private _icon = (uiNamespace getVariable ["ace_common_dlgDisableMouse", displayNull]) ctrlCreate ["RscPicture",-1];
     uiNamespace setVariable ["grad_permaChoice_icon", _icon];
-  	_icon ctrlSetPosition _controlPosition;
-  	_icon ctrlSetText "USER\grad-permaChoice\data\dieAndSpectate_def.paa";
+    _icon ctrlSetPosition _controlPosition;
+    _icon ctrlSetText "USER\grad-permaChoice\data\dieAndSpectate_def.paa";
     _icon ctrlSetBackgroundColor [0,0,0,0.01];
     _icon ctrlCommit 0;
 

@@ -6,7 +6,7 @@ private _visionModes = [(missionConfigFile >> "PermaDeath"), "visionModes", [-2,
 private _spectatableSides = [(missionConfigFile >> "PermaDeath"), "spectatableSides", [west,east,independent,civilian]] call BIS_fnc_returnConfigEntry;
 
 if (_cameraModes isEqualTo [0,1,2]) then {
-    _cameraModes = [_cameraModes,[]];
+    _cameraModes = [_cameraModes, []];
 }else{
     private _checkModes = _cameraModes;
     private _array1 = [];
