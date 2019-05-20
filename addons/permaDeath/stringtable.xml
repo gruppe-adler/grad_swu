@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="GRAD">
+    <Package name="SWU">
+        <Key ID="STR_grad_swu_functions_dieMessageTitle">
+            <English>A</English>
+            <German>Sterben und Zusehen?</German>
+        </Key>
+        <Key ID="STR_grad_swu_functions_dieMessageContent">
+            <English>B</English>
+            <German>Willst du wirklich sterben und in den Spectator bis zur Nachbesprechung?</German>
+        </Key>
+        <Key ID="STR_grad_swu_functions_dieMessageConfirm">
+            <English>Confirm</English>
+            <German>Bestätigen</German>
+        </Key>
+        <Key ID="STR_grad_swu_functions_dieMessageCancel">
+            <English>Cancel</English>
+            <German>Abbrechen</German>
+        </Key>
+    </Package>
+</Project>
