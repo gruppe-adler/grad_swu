@@ -19,7 +19,7 @@ if (_cameraModes isEqualTo [0,1,2]) then {
         };
     }forEach [0,1,2];
 
-    _cameraModes = [_array1, _array2;
+    _cameraModes = [_array1, _array2];
 };
 
 if (_visionModes isEqualTo [-2,-1]) then {
@@ -36,7 +36,7 @@ if (_visionModes isEqualTo [-2,-1]) then {
         };
     }forEach [-2,-1,0,1,2,3,4,5,6,7];
 
-    _visionModes = [_array1, _array2;
+    _visionModes = [_array1, _array2];
 };
 
 if (_spectatableSides isEqualTo [west,east,independent,civilian]) then {
@@ -53,7 +53,7 @@ if (_spectatableSides isEqualTo [west,east,independent,civilian]) then {
         };
     }forEach [west,east,independent,civilian];
 
-    _spectatableSides = [_array1, _array2;
+    _spectatableSides = [_array1, _array2];
 };
 
 _cameraModes call ace_spectator_fnc_updateCameraModes; // no free cam
