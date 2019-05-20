@@ -1,6 +1,6 @@
 # grad_swu
-<a href="https://travis-ci.org/AdlerSalbei/grad_swu">
-        <img src="https://travis-ci.org/AdlerSalbei/grad_swu.svg?branch=master" alt="Build status">
+<a href="https://travis-ci.org/gruppe-adler/grad_swu">
+        <img src="https://travis-ci.org/gruppe-adler/grad_swu.svg?branch=master" alt="Build status">
     </a>
 ## Setup
 To use this mod in your mission, you have to add the following lines to your description.ext .
