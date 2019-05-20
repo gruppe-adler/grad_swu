@@ -17,8 +17,8 @@ if (_confirmed) then {
             setPlayerRespawnTime 0;
         };
         case 2 : {
-            private _respawnMax = [(missionConfigFile >> "PermaDeath"), "respawnMax", 5] call BIS_fnc_returnConfigEntry
-            if ((player getVariable [QGVAR(respawnCount), 0] >= _respawnMax)) then {
+            private _respawnMax = [(missionConfigFile >> "PermaDeath"), "respawnMax", 5] call BIS_fnc_returnConfigEntry;
+            if ((player getVariable [QGVAR(respawnCount), 0]) >= _respawnMax) then {
                 [] call FUNC(setPlayerSpectator);
             }else{
                 setPlayerRespawnTime 0;
