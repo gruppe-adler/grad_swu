@@ -1,0 +1,13 @@
+name = "GRAD SWU";
+author = "Gruppe Adler";
+picture = "logo_grad_ca.paa";
+//actionName = "Website";
+//action = "https://github.com/gruppe-adler/grad_swu/releases";
+description = "Gruppe Adler Show Medicalstate while Unconsious";
+logo = "logo_grad_ca.paa";
+logoOver = "logo_grad_ca.paa";
+tooltip = "Gruppe Adler SWU";
+overview = "";
+overviewPicture = "Adler.paa";
+overviewText = "";
+overviewFootnote = "";

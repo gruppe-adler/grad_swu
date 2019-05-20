@@ -1,0 +1,13 @@
+{
+  "name": "GRAD SWU",
+  "prefix": "grad_swu",
+  "author": "DerZade, Salbei, XDrake",
+  "files": [
+    "mod.cpp"
+  ],
+  "exclude": [
+    "*.psd",
+    "*.png",
+    "*.tga"
+  ]
+}
