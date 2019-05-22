@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="GRAD">
     <Package name="SWU">
-        <Key ID="STR_grad_swu_functions_dieMessageTitle">
-            <English>A</English>
-            <German>Sterben und Zusehen?</German>
+        <Key ID="STR_grad_swu_medicalState_settingCategory">
+            <English>grad_swu</English>
+            <German>grad_swu</German>
         </Key>
-        <Key ID="STR_grad_swu_functions_dieMessageContent">
-            <English>B</English>
-            <German>Willst du wirklich sterben und in den Spectator bis zur Nachbesprechung?</German>
+        <Key ID="STR_grad_swu_medicalState_showMedicalStateWhileUnconscious_displayName">
+            <English>Show Medical State</English>
+            <German>Medizinischer Zustand anzeigen</German>
         </Key>
-        <Key ID="STR_grad_swu_functions_dieMessageConfirm">
-            <English>Confirm</English>
-            <German>Bestätigen</German>
-        </Key>
-        <Key ID="STR_grad_swu_functions_dieMessageCancel">
-            <English>Cancel</English>
-            <German>Abbrechen</German>
+        <Key ID="STR_grad_swu_medicalState_showMedicalStateWhileUnconscious_tooltip">
+            <English>Will show you medical state while you are unconsious.</English>
+            <German>Zeigt deinen Medizinischen Zustand an während du ohnmächtig bist.</German>
         </Key>
     </Package>
 </Project>

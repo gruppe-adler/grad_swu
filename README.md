@@ -1,9 +1,13 @@
-# grad_swu
+# GRAD Show while Unconsious
 <a href="https://travis-ci.org/gruppe-adler/grad_swu">
         <img src="https://travis-ci.org/gruppe-adler/grad_swu.svg?branch=master" alt="Build status">
     </a>
+
+This mod adds a button on the lower half of the screen so you can choose when you're unconsious. It allso adds a medical overview to the unconsious state, to give the player an idea how bad he is injured.
+
 ## Setup
-To use this mod in your mission, you have to add the following lines to your description.ext .
+### PermaDeath
+To use the perma death option in your mission, you have to add the following lines to your description.ext .
 
 ```
 class PermaDeath {
@@ -23,7 +27,7 @@ class PermaDeath {
 - 0: go to spectator
 - 1: respawn
 - 2: respawn until the amunt of the option (respawnMax) is reached then go to spectator
-    
+
 *respawnMax* -> is only used when *deathMode* is set to 2, defines the maximum amount of respawns befor the player is send to spectator
 
 *cameraModes* -> Defines which camera modes the spectator will use, possible are
@@ -46,3 +50,7 @@ class PermaDeath {
 -  7: Thermal (Shade of Red and Green, Bodies are white)
 
 *spectatableSides* -> the sides that can be spectated (west,east,independent,civilian)
+
+###MedicalState
+
+You can enable/disable it through the CBA Settings.
