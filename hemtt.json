@@ -3,7 +3,8 @@
   "prefix": "grad_swu",
   "author": "DerZade, Salbei, XDrake",
   "files": [
-    "mod.cpp"
+    "mod.cpp",
+	"logo_grad_ca.paa"
   ],
   "exclude": [
     "*.psd",

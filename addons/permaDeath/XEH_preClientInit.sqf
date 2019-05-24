@@ -1,4 +1,4 @@
-
+#include "script_component.hpp"
 private _bool = [(missionConfigFile >> "PermaDeath"), "usePermaDeath", 0] call BIS_fnc_returnConfigEntry;
 
 if (_bool == 1) then {

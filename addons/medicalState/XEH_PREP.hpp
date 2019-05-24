@@ -1,8 +1,6 @@
-PREP(addZeusLogic);
-PREP(confirmPerma);
-PREP(forceRespawn);
-PREP(onPlayerKilled);
-PREP(onPlayerRespawn);
-PREP(onPlayerUnconscious);
-PREP(setPlayerSpectator);
-PREP(showNotification);
+PREP(bloodLossToRGBA);
+PREP(damageToRGBA);
+PREP(menuPFH);
+PREP(openMenu);
+PREP(updateBodyImage);
+PREP(updateInjuryList);

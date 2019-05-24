@@ -26,7 +26,7 @@ localize LSTRING(dieMessageCancel)
 if (_confirmed) then {
     closeDialog 0;
     player setDamage 1;
-    switch () do {
+    switch (_deathmode) do {
         case 0 : {
             [] call FUNC(setPlayerSpectator);
         };
