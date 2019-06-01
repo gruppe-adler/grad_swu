@@ -4,8 +4,6 @@
 params ["_unit", "_state"];
 
 if _state then {
-    // hint str (uiNamespace getVariable ["ace_common_dlgDisableMouse", displayNull]);
-
     "STHud_Draw" call STUI_Canvas_Remove; // remove sthud
 
     private _controlPosition =
@@ -23,25 +21,24 @@ if _state then {
     _mouseOverArea ctrlSetBackgroundColor [0,0,0,0.01];
     _mouseOverArea ctrlCommit 0;
 
-    _mouseOverArea ctrlAddEventHandler ["ButtonClick", "[] spawn grad_permaChoice_fnc_confirmPerma;"];
+    _mouseOverArea ctrlAddEventHandler ["ButtonClick", QUOTE([] spawn FUNC(confirmPerma);)];
 
     _mouseOverArea ctrlAddEventHandler ["MouseEnter",{
-        private _icon = uiNamespace getVariable ["grad_permaChoice_icon", controlNull];
-        if (!isNull _icon) then { _icon ctrlSetText "USER\grad-permaChoice\data\dieAndSpectate_act.paa"; false };
+        private _icon = uiNamespace getVariable [QGVAR(icon), controlNull];
+        if (!isNull _icon) then { _icon ctrlSetText QPATHTOF(data\dieAndSpectate_act.paa); false };
     }];
     _mouseOverArea ctrlAddEventHandler ["MouseExit",{
-        private _icon = uiNamespace getVariable ["grad_permaChoice_icon", controlNull];
-        if (!isNull _icon) then { _icon ctrlSetText "USER\grad-permaChoice\data\dieAndSpectate_def.paa"; false };
+        private _icon = uiNamespace getVariable [QGVAR(icon), controlNull];
+        if (!isNull _icon) then { _icon ctrlSetText QPATHTOF(data\dieAndSpectate_def.paa); false };
     }];
 
     private _icon = (uiNamespace getVariable ["ace_common_dlgDisableMouse", displayNull]) ctrlCreate ["RscPicture",-1];
-    uiNamespace setVariable ["grad_permaChoice_icon", _icon];
+    uiNamespace setVariable [QGVAR(icon), _icon];
     _icon ctrlSetPosition _controlPosition;
-    _icon ctrlSetText "USER\grad-permaChoice\data\dieAndSpectate_def.paa";
+    _icon ctrlSetText QPATHTOF(data\dieAndSpectate_def.paa);
     _icon ctrlSetBackgroundColor [0,0,0,0.01];
     _icon ctrlCommit 0;
 
 } else {
-    //hint "state false";
     "STHud_Draw" call STUI_Canvas_Add;
 };

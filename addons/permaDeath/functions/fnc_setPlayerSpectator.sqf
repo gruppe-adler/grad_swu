@@ -5,6 +5,8 @@ private _cameraModes = [(missionConfigFile >> "PermaDeath"), "cameraModes", [0,1
 private _visionModes = [(missionConfigFile >> "PermaDeath"), "visionModes", [-2,-1]] call BIS_fnc_returnConfigEntry;
 private _spectatableSides = [(missionConfigFile >> "PermaDeath"), "spectatableSides", [west,east,independent,civilian]] call BIS_fnc_returnConfigEntry;
 
+diag_log format ["Camera: %1, Vision: %2, Spec: %3", _cameraModes, _visionModes, _spectatableSides];
+
 if (_cameraModes isEqualTo [0,1,2]) then {
     _cameraModes = [_cameraModes, []];
 }else{
@@ -42,7 +44,7 @@ if (_visionModes isEqualTo [-2,-1]) then {
 if (_spectatableSides isEqualTo [west,east,independent,civilian]) then {
     _spectatableSides = [_spectatableSides,[]];
 }else{
-    private _spectatableSides = _spectatableSides;
+    private _checkModes = _spectatableSides;
     private _array1 = [];
     private _array2 = [];
     {
@@ -55,6 +57,8 @@ if (_spectatableSides isEqualTo [west,east,independent,civilian]) then {
 
     _spectatableSides = [_array1, _array2];
 };
+
+diag_log format ["Camera: %1, Vision: %2, Spec: %3", _cameraModes, _visionModes, _spectatableSides];
 
 _cameraModes call ace_spectator_fnc_updateCameraModes; // no free cam
 _visionModes call ace_spectator_fnc_updateVisionModes; // no thermal
@@ -70,4 +74,6 @@ private _allCuratorUnits = [];
     _allCuratorUnits pushback (getAssignedCuratorUnit _x);
 } forEach allCurators;
 
-[name player] remoteExec [QGVAR(showNotification), _allCuratorUnits, true];
+if !(_allCuratorUnits isEqualTo []) then {
+    [name player] remoteExec [QGVAR(showNotification), _allCuratorUnits, true];
+};
