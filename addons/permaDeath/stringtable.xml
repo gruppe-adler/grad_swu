@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="GRAD">
-    <Package name="SWU">
+<Project name="GRAD_swu">
+    <Package name="permaDeath">
         <Key ID="STR_grad_swu_permaDeath_dieMessageTitle">
             <English>Die</English>
             <German>Sterben</German>

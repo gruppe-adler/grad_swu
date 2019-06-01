@@ -16,6 +16,8 @@
  */
  params ["_target"];
 
+ diag_log format ["Dialog: %1, target: %2", dialog, _target];
+
  if (dialog || {isNull _target}) exitWith {
      private _display = uiNamespace getVariable [QGVAR(menuDisplay), displayNull];
      if (!isNull _display) then {closeDialog 0};

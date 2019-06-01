@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="GRAD">
-    <Package name="SWU">
+<Project name="GRAD_swu">
+    <Package name="medicalState">
         <Key ID="STR_grad_swu_medicalState_settingCategory">
             <English>grad_swu</English>
             <German>grad_swu</German>
         </Key>
-        <Key ID="STR_grad_swu_medicalState_showMedicalStateWhileUnconscious_displayName">
+        <Key ID="STR_grad_swu_medicalState_settingAllowSWU_displayName">
             <English>Show Medical State</English>
             <German>Medizinischer Zustand anzeigen</German>
         </Key>
-        <Key ID="STR_grad_swu_medicalState_showMedicalStateWhileUnconscious_tooltip">
+        <Key ID="STR_grad_swu_medicalState_settingAllowSWU_tooltip">
             <English>Will show you medical state while you are unconsious.</English>
             <German>Zeigt deinen Medizinischen Zustand an während du ohnmächtig bist.</German>
         </Key>
